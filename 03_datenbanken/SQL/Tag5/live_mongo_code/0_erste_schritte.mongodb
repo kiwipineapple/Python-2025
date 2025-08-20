@@ -1,0 +1,49 @@
+
+// ERSTE SCHRITTE
+/*
+db ist die aktuell genutzte Datenbank
+*/
+
+// Alle Datenbanken in der Connection angucken
+//db.getMongo().getDBs()
+
+// Datenbank löschen
+//db.dropDatabase()
+
+// neue Collection in heroDB anlegen:
+//db.createCollection("heroes")
+
+// Einen Eintrag in der Collection heroes anlegen
+// Ein Eintrag nennt man Dokument
+// db.heroes.insertOne(
+//     {
+//         name: "Superman",
+//         city: "Metropolis"
+//     }
+// )
+
+// Alle Einträge in der Collection heroes auflisten
+//db.heroes.find()
+
+// Alle Collections auflisten
+// db.getCollectionNames()
+
+db.heroes.insertMany(
+ [
+        {
+            name: "Spiderman",
+            city: "New York"
+        },
+        {
+            name: "Wonder Woman",
+            city: "Themyscira",
+            powers: ["Super Power", "Lasso der Wahrheit"]
+        },
+        {
+            name: "Batman",
+            city: "Gotham City",
+        }
+    ]
+)
+db.heroes.find()
+

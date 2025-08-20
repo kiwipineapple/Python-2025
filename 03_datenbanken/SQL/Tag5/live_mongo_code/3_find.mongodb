@@ -1,0 +1,75 @@
+// Alle Objekte auflisten
+// db.heroes.find()
+
+// mit einem Suchkriterium
+// db.heroes.find({city: "New York"})
+
+// mit zwei Suchkriterien
+// db.heroes.find({points: 80, city: "New York"})
+
+// 1. Argument von find() ist das Suchkriterium
+// 2. Argument von find() ist die Spaltenliste
+
+// Spaltenliste definieren: 1 bedeutet anzeigen, 0 verstecken
+// db.heroes.find({}, {name: 1, city: 1, _id: 0})
+
+// Sortiert ausgeben (1=>aufsteigend, -1=>absteigend)
+// db.heroes.find().sort({city: 1})
+
+// $eq => Vergleich auf Gleichheit
+// db.heroes.find({city: {$eq: "New York"}})
+
+// $ne => Vergleich auf Ungleichheit
+// db.heroes.find({city: {$ne: "New York"}})
+
+// Alle anzeigen, die mehr als 50 Punkte (> 50)
+// db.heroes.find({points: {$gt: 50}})
+
+// Arithmetische Vergleichsoperatoren:
+// $gt, $lt, $gte, $lte, $eq, $ne
+
+// > 50 and < 200
+// db.heroes.find({points: {$gt: 50, $lt: 200}})
+
+// In-Operator
+// db.heroes.find(
+//     {
+//         city: {
+//             $in: ["New York", "Metropolis"]
+//         }
+//     }
+// )
+
+// i => steht für case-insensitive (egal groß oder klein)
+// db.heroes.find({name: /er/i})
+
+// Alle Heroes, die das Attribut inventory haben
+// db.heroes.find({inventory: {$exists: true}})
+
+// Alle updaten, die das Attribut inventory haben
+// und dann ein Element in das array pushen
+// db.heroes.updateMany(
+//     {inventory: {$exists: true}},
+//     {$push: {inventory: "Icecream"}}
+// )
+
+// ODER-Operator: alle Einträge, die mehr als 50 Punkte haben
+// oder city = New York
+// db.heroes.find(
+//     {
+//         $or: [
+//             {points: {$gt: 50}},
+//             {city: "New York"}
+//         ]
+//     }
+// )
+
+// NOT IN - Operator (nicht in Liste
+// Alle Helden, die nicht in Metropolis oder New York 
+db.heroes.find(
+    {
+        city: {
+            $nin: ["Metropolis", "New York"]
+        }
+    }
+)

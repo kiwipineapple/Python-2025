@@ -1,0 +1,48 @@
+// db.getMongo().getDBs()
+
+// db.dropDatabase()
+// db.createCollection("weather")
+/*
+db.weather.insertMany([
+  { city: "Berlin", date: "2023-07-01", temperature: 27, humidity: 60, wind: 12, rain: false },
+  { city: "Berlin", date: "2023-07-02", temperature: 24, humidity: 65, wind: 18, rain: true },
+  { city: "Berlin", date: "2023-07-03", temperature: 22, humidity: 70, wind: 9, rain: false },
+  { city: "Paris", date: "2023-07-01", temperature: 30, humidity: 55, wind: 15, rain: false },
+  { city: "Paris", date: "2023-07-02", temperature: 28, humidity: 60, wind: 14, rain: true },
+  { city: "Paris", date: "2023-07-03", temperature: 26, humidity: 58, wind: 10, rain: false },
+  { city: "London", date: "2023-07-01", temperature: 21, humidity: 75, wind: 20, rain: true },
+  { city: "London", date: "2023-07-02", temperature: 19, humidity: 80, wind: 22, rain: true },
+  { city: "London", date: "2023-07-03", temperature: 18, humidity: 85, wind: 25, rain: true }
+])
+*/
+// Aufgaben
+// use("weather");
+
+//1. Finde alle Wetterdaten von Berlin.
+// db.weather.find()
+
+//2. Finde alle Einträge, bei denen es geregnet hat.
+// db.weather.find({rain: true})
+
+// 3. Finde alle Tage, an denen die Temperatur unter 20 Grad lag.
+// db.weather.find({temperature: {$lt: 20}})
+
+// 4. Finde alle Daten mit Windgeschwindigkeit über 20 km/h.
+// db.weather.find({wind: {$gt: 20}})
+
+// 5. Finde alle trockenen Tage (rain = false) mit mehr als 60 % Luftfeuchtigkeit.
+// db.weather.find({rain: false, humidity: {$gt: 60}})
+
+// 6. Finde alle Tage, an denen es geregnet hat und die Temperatur gleichzeitig über 25 Grad lag.
+// db.weather.find({rain: true, temperature: {$gt: 25}})
+
+// 7. Gib nur die Städte und Temperaturen aus, ohne `_id`.
+// db.weather.find({city}, {temperature})????????????????
+
+// 8. Sortiere alle Daten nach Temperatur absteigend.
+// db.weather.find().sort({temperature: -1})
+
+// 9. Finde alle Einträge vom 2. Juli 2023.
+// db.weather.find({date: {$eq: "2023-07-02"}})
+// 10. Welche Städte hatten weniger 60 % Luftfeuchtigkeit?
+db.weather.find({humidity: {$lt: 60}})

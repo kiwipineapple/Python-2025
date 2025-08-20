@@ -1,0 +1,1 @@
+# Download MongoDB for VS Code in Extensions.

@@ -1,0 +1,22 @@
+
+// 3. Mini Aufgabe:
+// Finde alle Städte, die Nicht in Deutschland sind
+// Finde alle Städte, die NICHT in Deutschland sind und mehr als 1 Millionen Einwohner haben
+// Finde alle Städte, die das Attribt country haben
+// Städte mit mehr als 500.000 Einwohner und weniger als inklusive 1 Million Einwohner
+db.Cities.find({ country: { $ne: "Germany" } }
+db.Cities.find({
+    country: { $ne: "Germany" },
+    population: { $gt: 1000000 }
+})
+db.Cities.find({ country: { exists: true } })
+db.Cities.find({ population: { $gt: 500000, $lte: 1000000 } })
+
+
+// DELETE
+// delete (wie update) => deleteOne und deleteMany
+// Einen Eintrag löschen (der erste gefundene) mit name Spiderman
+db.heroes.deleteOne({ name: "Spiderman" })
+
+// Alle Einträge löschen, die kein Inventory haben
+db.heroes.deleteMany({ inventory: { $exists: false } })

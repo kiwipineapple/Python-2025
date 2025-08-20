@@ -1,0 +1,45 @@
+// 3. Mini Aufgabe:
+// füge der collection Cities den Städten ein Attribut districts hinzu, ein Array mit Stadteilen
+// Füge für Berlin die Stadtteile "Mitte", "Kreuzberg" und "Friedrichshain" hinzu
+// füge für New York die Stadtteile "Manhattan", "Brooklyn" und "Queens" hinzu
+// Lösche den ersten Stadtteil von Berlin
+// Lösche das Attribt districts von New York
+// Füge für eine spezifische ID einen neuen district ein
+use("heroDB");
+// füge der collection Cities den Städten ein Attribut districts hinzu
+// db.Cities.updateOne(
+//     {},
+//     {$set: {districts: []}}
+// )
+
+// Füge für Berlin die Stadtteile "Mitte", "Kreuzberg" und "Friedrichshain
+// db.Cities.updateOne(
+//     {name: "Berlin"},
+//     {$set: {districts: ["Mitte", "Kreuzberg", "Friedrichshain"]}}
+// )
+
+// füge für New York die Stadtteile "Manhattan", "Brooklyn" und "Queens"
+db.Cities.updateOne(
+    {name: "New York"},
+    {$set: {districts: ["Manhattan", "Brooklyn", "Queens"]}}
+// )
+
+// Lösche den ersten Stadtteil von Berlin
+// db.Cities.updateOne(
+//     {name: "Berlin"},
+//     {$pop: {districts: -1}}
+// )
+
+// Lösche das Attribt districts von New York
+// db.Cities.updateOne(
+//     {name: "New York"},
+//     {$unset: {districts: ""}}
+// )
+
+// db.Cities.updateOne(
+//     {_id: ObjectId("688883c866eaa478ef5f2ac8")},
+//     {$push: {districts: "Downtown"}}
+// )
+
+
+db.Cities.find()

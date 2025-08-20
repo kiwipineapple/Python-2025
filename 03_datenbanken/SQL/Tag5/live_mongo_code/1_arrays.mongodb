@@ -1,0 +1,68 @@
+// ARRAYS
+use("heroDB")
+db.heroes.updateMany(
+    {},
+    {
+        $set: {
+            inventory: ["Cape", "Glasses"]
+        }
+    }
+)
+
+// Einen Wert im Array eines Helden hinzufügen
+db.heroes.updateOne(
+    { name: "Spiderman" },
+    {
+        $push: {
+            inventory: "Knife"
+        }
+    }
+)
+
+// doppelte Einträge mit $addToSet verhindern
+db.heroes.updateOne(
+    { name: "Spiderman" },
+    {
+        $addToSet: {
+            inventory: "Knife"
+        }
+    }
+)
+
+// Erstes Element des Arrays inventory rauslöschen (pop, -1)
+// Letzes Element mit pop 1 löschen
+db.heroes.updateOne(
+    { name: "Spiderman" },
+    {
+        $pop: {
+            inventory: 1
+        }
+    }
+)
+
+// Ein spezifisches Element aus dem Array löschen (hier Lasso der Wahrheit)
+db.heroes.updateOne(
+    { name: "Wonder Woman" },
+    {
+        $pull: {
+            powers: "Lasso der Wahrheit"
+        }
+    }
+)
+
+// ein Attribut vollständig löschen
+db.heroes.updateOne(
+    { name: "Wonder Woman", city: "Themyscira" },
+    {
+        $unset: { powers: "" }
+    }
+)
+
+// Ein Objekt updaten via ID
+db.heroes.updateOne(
+    { _id: ObjectId("688878541298fbaf3ad549e8") },
+    {
+        $set: { points: 200 }
+    }
+)
+db.heroes.find()
