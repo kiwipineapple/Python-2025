@@ -24,6 +24,26 @@ Zugriff auf SW-Serve durch Ports-Nummer.
 5. Test excecution: machen die Tests. 
 6. Testabschluss: Bericht für Test erstellen. 
 
+## V-Modell
+Unit Test -> Integration Test -> System Test -> Abnahme Test
+
+
+
+## Agile
+**Kanban**: Backlog, in progress, done  
+**Scrum**: Sprint, schätz Point, Review, Retro  
+**Product Owner**: Entscheiden was machen sollten  
+**Scrum Master**: Vertretung der Kunden in Projekt   
+**Dev**: Wie das machen sollten  
+
+[Scrum guides Link](https://scrumguides.org/)
+
+**DevOps**: Software Infastruktur, Kombi aus *IT* und *Dev*, z.B. Jira, Git Server, CI/CD  
+**IT**: Hareware Infastruktur, z.B. Username, Computer vorbereiten
+
+**Virtuelle Maschinen**:  Host O.S. -> isolierte Subsystem
+
+
 ## Test Excetion
 ~~~python
 print('Hallo World')
