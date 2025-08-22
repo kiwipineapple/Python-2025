@@ -1,8 +1,24 @@
 # Chapter 1
 
 **Test vs. Debuggen**  
-Test ist Code zu *bewerten*  
-Debuggen ist Code zu *verbessern*
+Test ist Code zu *bewerten*, reduzieren Fehlerwirkung  
+Debuggen ist Code zu *verbessern*  
+
+**Test Defination**  
+Der Prozess innerhalb des Softwareentwicklungslebenszyklus, der die Qualität einer Komponente oder eines Systems und der zugehörigen Arbeitsergebnisse bewertet.
+
+**Test(Qualität Steuerung) vs. Qualitätsicherung (QA)**  
+**Test**: Produktorientierung, zur Erreichung eines angemessenen Qualitätsniveaus  
+**QA**: Prozessorientierung, Implementierung und verbesserung Prozess
+
+## Grundsätze des Testens  
+1. Testen zeigt das Vorhandensein, nicht die Abwesenheit von Fehlerzuständen  
+2. Vollständiges Testen ist unmöglich  
+3. Frühes Testen spart Zeit und Geld
+4. Fehlerzustände treten gehäuft auf
+5. Tests nutzen sich ab
+6. Testen ist kontextabhängig
+7. Trugschluss: „Keine Fehler“ bedeutet ein brauchbares System
 
 
 **Validierung** ist Kundenoritieren, von draußen  
@@ -19,8 +35,8 @@ Zugriff auf SW-Serve durch Ports-Nummer.
 ## Test activities
 1. Testplanung: Ziel des Test
 2. Testanalyse: Analyse was soll getestet. 
-3. Test Design: Testplan wie die Test zu machen. 
-4. Test Implementation: prepare Test Hardware, Test Data, Test case
+3. Test Entwurf: Testplan wie die Test zu machen. 
+4. Test Realisierung: prepare Test Hardware, Test Data, Test case
 5. Test excecution: machen die Tests. 
 6. Testabschluss: Bericht für Test erstellen. 
 
@@ -41,7 +57,27 @@ Unit Test -> Integration Test -> System Test -> Abnahme Test
 **DevOps**: Software Infastruktur, Kombi aus *IT* und *Dev*, z.B. Jira, Git Server, CI/CD  
 **IT**: Hareware Infastruktur, z.B. Username, Computer vorbereiten
 
-**Virtuelle Maschinen**:  Host O.S. -> isolierte Subsystem
+## Virtuelle Maschinen (WM)
+Host O.S. -> isolierte Subsystem  
+Selbst Versuch: Win10 WM / Ubuntu VW -> Mithilfe [Youtube](https://www.youtube.com/watch?v=F5MMhNQ3C3I)
+
+---
+
+## Teststufen
+**Softwaretest/Komponententest/Unittest**: testen isolierte Baustein  
+**Komponentintegrationtest**: Test Schnittstelle zwischen Komponenten  
+**Systemtest**  
+**Systemintegrationtest**  
+**Abnahmetest**: -> Alpha Test: mit Umgebung von Entwickler  
+                ->Beta Test: mit Umgebung von End User  
+ **Shift-Left-Ansatz**
+
+## Testarten
+funktinale Test  
+Nicht funktinale Test: Leistungtest, Security, Performance(z.B. Zeit)
+
+**Blace-Box**: Akzeptanz Test  
+**White-Box**: guck von innen  
 
 
 ## Test Excetion
