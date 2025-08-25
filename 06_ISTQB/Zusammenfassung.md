@@ -85,15 +85,15 @@ Nicht funktinale Test: Leistungtest, Security, Performance(z.B. Zeit)
 
 
 1. objekt-orientirert-programmieren
-miro project in Modul schreiben
+miro project in Modul schreiben (done)
 
 2. Datenbank Design
    
 3. Try Except
 
-4. Warum for-Schleifen / While-Schleifen
+4. Warum for-Schleifen / While-Schleifen (done)
    
-4. Quizzes Chapter 1
+4. Quizzes Chapter 1, 2 (done)
 
 []
 1. Definition: Anlegen von list
