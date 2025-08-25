@@ -62,7 +62,7 @@ Host O.S. -> isolierte Subsystem
 Selbst Versuch: Win10 WM / Ubuntu VW -> Mithilfe [Youtube](https://www.youtube.com/watch?v=F5MMhNQ3C3I)
 
 ---
-
+# Chapter 2
 ## Teststufen
 **Softwaretest/Komponententest/Unittest**: testen isolierte Baustein  
 **Komponentintegrationtest**: Test Schnittstelle zwischen Komponenten  
@@ -79,6 +79,29 @@ Nicht funktinale Test: Leistungtest, Security, Performance(z.B. Zeit)
 **Blace-Box**: Akzeptanz Test  
 **White-Box**: guck von innen  
 
+
+**Fehlernachtest** Test ob Fehler behoben ist, keine Nebenauswirkung mehr.  
+**Regressionstest**  Test nach Fehlernachtest, mit Umgebung.
+
+
+1. objekt-orientirert-programmieren
+miro project in Modul schreiben
+
+2. Datenbank Design
+   
+3. Try Except
+
+4. Warum for-Schleifen / While-Schleifen
+   
+4. Quizzes Chapter 1
+
+[]
+1. Definition: Anlegen von list
+2. Index, Key
+
+()
+1. Anlegen von Turple
+2. Calling Function
 
 ## Test Excetion
 ~~~python
