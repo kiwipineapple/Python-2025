@@ -1,0 +1,31 @@
+[
+    [
+        {
+            "number": 100,
+            "name": "Pizza Margeritta",
+            "price": 5
+        },
+        {
+            "number": 101,
+            "name": "Pizza Tunfisch",
+            "price": 6
+        },
+        {
+            "number": 102,
+            "name": "Pizza Fungi",
+            "price": 7
+        }
+    ],
+    [
+        {
+            "number": 200,
+            "name": "Auflauf Nudeln",
+            "price": 8
+        },
+        {
+            "number": 201,
+            "name": "Auflauf Kartoffeln",
+            "price": 9
+        }
+    ]
+]
