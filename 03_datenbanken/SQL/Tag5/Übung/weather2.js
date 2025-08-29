@@ -1,27 +1,27 @@
-db.getMongo().getDBs()
-db.dropDatabase()
-// db.createCollection("weather2")
+// db.getMongo().getDBs()
+// db.dropDatabase()
+db.createCollection("weather2")
 
-// db.weather2.insertMany([
-//   {
-//     city: "Berlin",
-//     date: "2023-07-01",
-//     phenomena: ["sunny", "dry"],
-//     measurements: [25, 26, 27, 29]
-//   },
-//   {
-//     city: "Paris",
-//     date: "2023-07-01",
-//     phenomena: ["cloudy", "windy"],
-//     measurements: [23, 22, 24, 25]
-//   },
-//   {
-//     city: "London",
-//     date: "2023-07-01",
-//     phenomena: ["rain", "storm", "cold"],
-//     measurements: [17, 16, 18, 15]
-//   }
-// ])
+db.weather2.insertMany([
+    {
+        city: "Berlin",
+        date: "2023-07-01",
+        phenomena: ["sunny", "dry"],
+        measurements: [25, 26, 27, 29]
+    },
+    {
+        city: "Paris",
+        date: "2023-07-01",
+        phenomena: ["cloudy", "windy"],
+        measurements: [23, 22, 24, 25]
+    },
+    {
+        city: "London",
+        date: "2023-07-01",
+        phenomena: ["rain", "storm", "cold"],
+        measurements: [17, 16, 18, 15]
+    }
+])
 
 
 // Aufgaben

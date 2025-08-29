@@ -20,4 +20,4 @@ class City:
 
 
 hamburg = City("Hamburg")
-print(repr(hamburg))  # City(Hamburg)
+print(repr(hamburg))  # City('Hamburg')

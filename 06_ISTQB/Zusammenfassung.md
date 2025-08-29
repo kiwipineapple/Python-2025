@@ -83,18 +83,6 @@ Nicht funktinale Test: Leistungtest, Security, Performance(z.B. Zeit)
 **Fehlernachtest** Test ob Fehler behoben ist, keine Nebenauswirkung mehr.  
 **Regressionstest**  Test nach Fehlernachtest, mit Umgebung.
 
-
-1. objekt-orientirert-programmieren
-miro project in Modul schreiben (done)
-
-2. Datenbank Design
-   
-3. Try Except
-
-4. Warum for-Schleifen / While-Schleifen (done)
-   
-4. Quizzes Chapter 1, 2 (done)
-
 []
 1. Definition: Anlegen von list
 2. Index, Key
@@ -102,6 +90,24 @@ miro project in Modul schreiben (done)
 ()
 1. Anlegen von Turple
 2. Calling Function
+
+# Chapter 3
+**Statische Test** nicht ausgeführt test, *z.B.*, Anforderung, Testfälle, Testkonzept, Dokumentation  
+**Dynamischer Test** ausführbare Test  
+
+## Aktivitäten des Reviewprozesses
+**Planung**    
+**Reviewbeginn**: Jeder Zugang zu Arbeitsergebnis Sicherstellen   
+**Inidividuelles Review**: Gutachter führt review durch  
+**Kommunikation und Analyse**: Anomalien(Fehler) werden diskutieren  
+**Behebung und Bericht erstattung**
+
+## Rollen bei Reviews
+**Manager**: Entscheidet, was gegrüft werden soll.  
+**Autor**: Erstellt zu prüfende Arbeitsergebnis.  
+**Moderator**: Sorge für effektive Ablauf.
+**Prodokollant**: Sammeln Anomalien
+**Gutachter**: Review machen.
 
 ## Test Excetion
 ~~~python

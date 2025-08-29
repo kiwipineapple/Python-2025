@@ -1,35 +1,97 @@
-from menus import *
-import greetings as gt
-from order import *
+from item import *
+from read_json import read_json
 
 
-def quittung(order_list, number, name, price):
-    print('Quittung')
+def create_pizza_menu(pizzas_input):
+    return [Pizza(item['number'], item['name'], item['price'])
+            for item in pizzas_input]
+
+
+def create_auflauf_menu(auflaufs_input):
+    return [Auflauf(item['number'], item['name'], item['price'])
+            for item in auflaufs_input]
+
+
+def print_pizza_menu(pizzas):
+    print('Pizzen')
     print('=' * 10)
+    for pizza in pizzas:
+        print(pizza)
+
+
+def print_auflauf_menu(auflaufs):
+    print('Auflauf')
+    print('=' * 10)
+    for auf in auflaufs:
+        print(auf)
+
+
+def print_menu(pizzas, auflaufs):
+    print('Wilkommen bei Miro restaurant ')
+    print('=' * 10)
+    print()
+    print_pizza_menu(pizzas)
+    print()
+    print()
+    print_auflauf_menu(auflaufs)
+
+
+def find(menu, order_numer):
+    for item in menu:
+        if item.number == order_numer:
+            return item
+    return None
+
+
+def bestellung(menu):
+    print('\n\nWas möchsten Sie bestellen?')
+    print('=' * 20)
+    order_list = []
+    while True:
+        try:
+            order_number = int(input('> '))
+        except:
+            print("Error input!")
+        else:
+            if order_number == 0:
+                break
+
+            found = find(menu, order_number)
+
+            if not found:
+                print('Leider bieten wir das nicht an.')
+            else:
+                order_list.append(found)
+
+    return order_list
+
+
+def print_quittung(order_list):
+    print('\n\nQuittung')
+    print('=' * 10)
+    for order in order_list:
+        print(order)
+
     sum = 0
-    for num in order_list:
-        x = number.index(num)
-        # print(x)
-        print(f'{number[x]}. {name[x]} {price[x]}€')
-        sum += price[x]
-    print(f'Die Summe beträgt: {sum}€')
+    for order in order_list:
+        sum += order.price
+    print(f'\n\nDie Summe beträgt: {sum} €')
+    print('\n\nVielen Dank für Ihren Besuch!')
 
 
 if __name__ == '__main__':
-    gt.greeting()
 
-    pizza_list = [100, 101, 102]
-    pizza_name = ['Pizza Margeritta', 'Pizza Tunfisch', 'Pizza Fungi']
-    pizza_price = [5, 6, 7]
-    pizza_menu = Pizza('Pizzen', pizza_list, pizza_name, pizza_price)
-    pizza_menu.print_menu()
+    data = read_json()
+    assert (len(data) == 2)
+    pizzas_input = data[0]
+    auflaufs_input = data[1]
 
-    auflauf_list = [200, 201]
-    auflauf_name = ['Auflauf Nudeln', 'Auflauf Kartoffeln']
-    auflauf_price = [8, 9]
-    pizza_menu = Pizza('Auflauf', auflauf_list, auflauf_name, auflauf_price)
-    pizza_menu.print_menu()
+    pizzas = create_pizza_menu(pizzas_input)
+    auflaufs = create_auflauf_menu(auflaufs_input)
 
-    oder_list = bestellung(pizza_list, auflauf_list)
-    print(oder_list)
-    # quittung(oder_list, number, name, price)
+    print_menu(pizzas, auflaufs)
+
+    menu = pizzas + auflaufs
+    order_list = bestellung(menu)
+
+    print_quittung(order_list)
