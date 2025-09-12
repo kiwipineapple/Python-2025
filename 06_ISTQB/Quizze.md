@@ -94,3 +94,57 @@
 28. a -> b
 29. d
 30. d
+
+# Chapter 4
+1. b
+2. a
+3. c
+4. b
+5. c
+6. b
+7. c
+8. c
+9. b -> c
+10. b
+11. b
+12. a
+13. c -> b Abdeckung Zustandsübergangstesttechnik: Übergang/gasamt Übergang
+14. b
+15. d -> b: Schwäche der White-Box-Techniken
+16. a -> c: Stärke der White-Box-Techniken
+17. c
+18. c
+19. b
+20. a
+21. d -> a INVEST
+22. a
+23. a
+24. a -> b ATDD: Testfälle vor der Implementierung der User Story erstellt werden
+25. b
+26. a -> b erste Schritt im ATDD: Erstellung der Akzeptanzkriterien
+27. a
+28. a
+29. a
+30. d -> b Testfall im ATDD: Mit einer Sequenz von Aktivitäten, die korrektes Verhalten bestätigen
+
+# Chapter 5
+1. c
+2. d
+3. 
+4. c
+5. b
+6. c
+7. d
+8. b
+9. c
+10. d
+11. c
+12. b
+13. b
+14. c
+15. c
+16. c
+17. c
+18. a
+19. c
+20. 

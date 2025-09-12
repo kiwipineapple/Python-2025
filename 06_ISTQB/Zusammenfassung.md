@@ -109,6 +109,28 @@ Nicht funktinale Test: Leistungtest, Security, Performance(z.B. Zeit)
 **Prodokollant**: Sammeln Anomalien
 **Gutachter**: Review machen.
 
+# Chapter 4  
+**Black-Box Test**: Äquivalenzklassenbildung, Grenzwertanalyse(2-Grenzwert, 3-Grenzwerte), Entscheidungstabellentest, Zustandsübergangstest  
+**White-Box Test**: Anweisungstest, Zweigtest
+**Erfahrungbasiert Test**: Intuitive Testfallermittlung, Checklistenbasiertes Test, Exploratives Testen(Sitzungsbasierter Test)
+
+## Werte der White-Box Test
+1. Kann Fehler haben, wenn Specifikation unvollständig ist.
+2. Kann beim statischen Testen eingesetzt werden
+3. Objektive Messgröße der Überdeckung
+**Draw IO** für ERD Diagramm  
+DB:  
+File-Based: MS Access, SQLite  
+Serve-Based: MySQL, Orcal, Postgress, SAP, MongoDB  
+DB Key Tabelle
+1-n
+m-n: Zwischentabelle braucht.
+
+
+
+# Chapter 5
+**Testfortschrittbericht** Täglich oder wöchentlich
+**Test
 ## Test Excetion
 ~~~python
 print('Hallo World')
