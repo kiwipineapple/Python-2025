@@ -1,0 +1,5 @@
+root - INFO - 2025-09-18 20:01:33,843- app.py- Application started
+root - DEBUG - 2025-09-18 20:15:46,579- app.py- User Inputs:  --firstname: tong  --num1: 1 --num2: 5
+root - INFO - 2025-09-18 20:15:46,580- calculator.py- Add function started with a:1 and b:5
+root - INFO - 2025-09-18 20:15:46,580- calculator.py- Sub function started with a:1 and b:5
+root - INFO - 2025-09-18 20:15:46,581- app.py- Application closed
