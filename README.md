@@ -16,3 +16,6 @@
 ## KI Lebenslauf Korrektur
 [Enhancv](https://enhancv.com/de/cv-checker/)  
 [supawork](https://supawork.ai/de/ai-resume-checker)
+
+## Thema  
+Python, Github, Scrum, License, Virtuelle Maschine, Database, ERD, Trello, Web Service, ATI, FastAPI, Insomnia, Postman, OpenWeatherMap, Xampp, Jira, Kiwi
