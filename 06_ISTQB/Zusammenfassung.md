@@ -40,6 +40,10 @@ Zugriff auf SW-Serve durch Ports-Nummer.
 5. Test excecution: machen die Tests. 
 6. Testabschluss: Bericht für Test erstellen. 
 
+**inkrementellen Entwicklungsmodell**: Scrum  
+**sequenzielles Entwicklungsmodell**: V-Modell
+
+
 ## V-Modell
 Unit Test -> Integration Test -> System Test -> Abnahme Test
 
@@ -102,16 +106,20 @@ Nicht funktinale Test: Leistungtest, Security, Performance(z.B. Zeit)
 **Kommunikation und Analyse**: Anomalien(Fehler) werden diskutieren  
 **Behebung und Bericht erstattung**
 
+**formal Review**: techn. Review, Inspektion  
+**informelles Review**  
+**Walkthrough**: wird von Autor durchgeführt.  
+
 ## Rollen bei Reviews
-**Manager**: Entscheidet, was gegrüft werden soll.  
-**Autor**: Erstellt zu prüfende Arbeitsergebnis.  
-**Moderator**: Sorge für effektive Ablauf.
-**Prodokollant**: Sammeln Anomalien
+**Manager**: *Entscheidet, was gegrüft werden soll.*  
+**Autor**: *Erstellt zu prüfende Arbeitsergebnis.*  
+**Moderator**: Sorge für *effektive Ablauf*.  
+**Prodokollant**: Sammeln Anomalien  
 **Gutachter**: Review machen.
 
 # Chapter 4  
 **Black-Box Test**: Äquivalenzklassenbildung, Grenzwertanalyse(2-Grenzwert, 3-Grenzwerte), Entscheidungstabellentest, Zustandsübergangstest  
-**White-Box Test**: Anweisungstest, Zweigtest
+**White-Box Test**: Anweisungstest, Zweigtest. (zuerst Code, dann TC erstellen)  
 **Erfahrungbasiert Test**: Intuitive Testfallermittlung, Checklistenbasiertes Test, Exploratives Testen(Sitzungsbasierter Test)
 
 ## Werte der White-Box Test
