@@ -18,4 +18,4 @@
 [supawork](https://supawork.ai/de/ai-resume-checker)
 
 ## Thema  
-Python, Github, Scrum, License, Virtuelle Maschine, Database, ERD, Trello, Web Service, ATI, FastAPI, Insomnia, Postman, OpenWeatherMap, Xampp, Jira, Kiwi
+Python, Github, Scrum, License, Virtuelle Maschine, Database, ERD, Trello, Web Service, API, FastAPI, Insomnia, Postman, OpenWeatherMap, Xampp, Jira, Kiwi
