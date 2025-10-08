@@ -106,7 +106,7 @@ Nicht funktinale Test: Leistungtest, Security, Performance(z.B. Zeit)
 **Kommunikation und Analyse**: Anomalien(Fehler) werden diskutieren  
 **Behebung und Bericht erstattung**
 
-**formal Review**: techn. Review, Inspektion  
+**formal Review**: techn. Review(Konsensfindung und Entscheidungsfindung), Inspektion(Anomalien aufzudecken)  
 **informelles Review**  
 **Walkthrough**: wird von Autor durchgeführt.  
 
@@ -138,7 +138,7 @@ m-n: Zwischentabelle braucht.
 
 # Chapter 5
 **Testfortschrittbericht** Täglich oder wöchentlich
-**Test
+**Test**
 ## Test Excetion
 ~~~python
 print('Hallo World')
