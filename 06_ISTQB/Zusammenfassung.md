@@ -125,7 +125,7 @@ Nicht funktinale Test: Leistungtest, Security, Performance(z.B. Zeit)
 ## Werte der White-Box Test
 1. Kann Fehler haben, wenn Specifikation unvollständig ist.
 2. Kann beim statischen Testen eingesetzt werden
-3. Objektive Messgröße der Überdeckung
+3. Objektive Messgröße der Überdeckung  
 **Draw IO** für ERD Diagramm  
 DB:  
 File-Based: MS Access, SQLite  
