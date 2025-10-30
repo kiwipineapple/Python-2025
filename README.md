@@ -13,6 +13,9 @@
 ## Aufgabe Organisieren
 [Trello](https://trello.com/b/XJ09xmLu/python2025)
 
+## Idee erfassen & Bewerbungskonzept
+[mural](https://app.mural.co/t/tongwu2140/home)
+
 ## KI Lebenslauf Korrektur
 [Enhancv](https://enhancv.com/de/cv-checker/)  
 [supawork](https://supawork.ai/de/ai-resume-checker)
