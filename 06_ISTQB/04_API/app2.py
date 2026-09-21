@@ -1,7 +1,7 @@
 import requests
 from pprint import pprint
 
-API_KEY = "a40d32d92994f36fbf31e815dc7b86b7"
+API_KEY = "ec8798cdc3f558279b9cdda67c12b7fc"
 CITY = "guangzhou"
 LANG = "zh_cn"
 
@@ -17,3 +17,16 @@ def get_weather():
     if response.status_code != 200:
         raise RuntimeError(
             data.get("message", "Failed to fetch weather infos"))
+
+    return data
+
+def main():
+    data = get_weather()
+
+    city = data['name']
+
+    temp = data['main']['temp']
+    print(f'{city}: {temp}')
+
+if __name__ == "__main__":
+    main()

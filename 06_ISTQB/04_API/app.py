@@ -1,7 +1,7 @@
 import requests
 from pprint import pprint
 
-API_KEY = "a40d32d92994f36fbf31e815dc7b86b7"
+API_KEY = "ec8798cdc3f558279b9cdda67c12b7fc"
 CITY = "guangzhou"
 LANG = "zh_cn"
 
@@ -12,3 +12,5 @@ response = requests.get(URL)
 data = response.json()
 
 pprint(data)
+
+print(data['name'])
