@@ -10,8 +10,8 @@ os.chdir(Path(__file__).parent)
 with sync_playwright() as p:
     # Open the browser
     # browser = p.chromium.launch(headless = True) # Browser will be in background (invisible)
-    # browser = p.chromium.launch(headless = False) # Browser will be appeared and visible
-    browser = p.firefox.launch(headless=False)
+    browser = p.chromium.launch(headless = False) # Browser will be appeared and visible
+    # browser = p.firefox.launch(headless=False)
 
     # Create a new page
     page = browser.new_page()

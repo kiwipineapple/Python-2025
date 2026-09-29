@@ -12,9 +12,9 @@ password = os.getenv("PASSWORD")
 
 with sync_playwright() as p:
     # Open the browser
-    # browser = p.chromium.launch(headless = True) # Browser will be in background (invisible)
+    browser = p.chromium.launch(headless = True) # Browser will be in background (invisible)
     # browser = p.chromium.launch(headless = False) # Browser will be appeared and visible
-    browser = p.firefox.launch(headless=False)
+    # browser = p.firefox.launch(headless=False)
 
     # Create a new page
     page = browser.new_page()
@@ -33,9 +33,12 @@ with sync_playwright() as p:
     # Wait for the navigation to be completed
 
     # Way 1:
-    success_message = page.query_selector("text=Signed in successfully")
+    # success_message = page.query_selector("text=Signed in successfully")
+    success_message = page.locator("text=Signed in successfully")
 
-    if success_message:
+
+    try:
+        success_message.wait_for(state="visible", timeout=2000)
         print("Login successfully!")
 
         # Get the page title
@@ -44,7 +47,7 @@ with sync_playwright() as p:
         # Take a screenshot
         page.screenshot(path="./assert/02_example.png")
 
-    else:
+    except:
         print("Login failed")
 
     # Way 2:
@@ -61,7 +64,7 @@ with sync_playwright() as p:
         page.screenshot(path="./assert/03_example.png")
 
     else:
-        print("Login failed")
+        print("Login failed 2")
 
     # close the browser
     browser.close()
